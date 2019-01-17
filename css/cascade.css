@@ -1,0 +1,26 @@
+:root {
+  --color-primary: #333;
+  --color-primary-opposite: #fff;
+  --color-secondary: navy;
+  --font-primary: Georgia, serif;
+}
+
+html {
+  color: var(--color-primary);
+  font-family: var(--font-primary);
+}
+
+.banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 25em;
+  color: var(--color-primary);
+  background-color: var(--color-secondary);
+  --color-primary: var(--color-primary-opposite);
+}
+
+.banner-btn {
+  border-color: var(--color-primary);
+  color: var(--color-primary);
+}

@@ -1,0 +1,20 @@
+:root {
+  --color-primary: darkslateblue;
+  --color-secondary: cornsilk;
+}
+
+.btn {
+  background-color: var(--color-secondary);
+  border-color: var(--color-secondary);
+  color: var(--color-primary);
+  --icon-sky: #71eaff;
+  --icon-ground: #c2a063;
+  --icon-dino: #647600;
+}
+
+.btn:hover {
+  --color-primary: var(--color-secondary);
+  --color-secondary: var(--color-primary);
+  --icon-sky: #714b66;
+  --icon-ground: #994b33;
+}

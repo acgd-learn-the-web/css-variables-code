@@ -1,0 +1,43 @@
+:root {
+  --color-primary: #333;
+  --color-primary-opposite: #fff;
+  --color-secondary: olive;
+  --font-primary: Georgia, serif;
+}
+
+html {
+  color: var(--color-primary);
+  font-family: var(--font-primary);
+}
+
+.banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 25em;
+  color: var(--color-primary);
+  background-color: var(--color-secondary);
+  --color-primary: var(--color-primary-opposite);
+  --text-spacing: 1rem;
+}
+
+.banner-btn {
+  border-color: var(--color-primary);
+  color: var(--color-primary);
+}
+
+.banner p {
+  margin-bottom: var(--text-spacing);
+}
+
+.banner h2 {
+  margin-bottom: calc(var(--text-spacing) / 2);
+}
+
+@media only screen and (min-width: 38em) {
+
+  .banner {
+    --text-spacing: 2rem;
+  }
+
+}
